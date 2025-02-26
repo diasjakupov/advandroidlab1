@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">advandroidlab1</string>
+    <string name="title_deeplinks">Deeplinks</string>
+    <string name="title_service">Services</string>
+    <string name="title_broadcast">Receivers</string>
+    <string name="title_content_provider">Content Provider</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pick_image">Pick Image</string>
+    <string name="share_to_ig_story">Share to Instagram Story</string>
+</resources>
