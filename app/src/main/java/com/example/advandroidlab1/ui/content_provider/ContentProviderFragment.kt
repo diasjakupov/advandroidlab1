@@ -33,7 +33,10 @@ class ContentProviderFragment : BaseFragment<FragmentContentProviderBinding, Con
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val adapter = CalendarEventAdapter()
+        val adapter = CalendarEventAdapter { event ->
+            val bottomSheet = EventDetailsBottomSheet.newInstance(event)
+            bottomSheet.show(childFragmentManager, bottomSheet.tag)
+        }
         binding.rvEvents.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.VERTICAL, false)
         binding.rvEvents.adapter = adapter
         checkPermission()
